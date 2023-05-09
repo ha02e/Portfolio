@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Resume Website Template Free Download</title>
+        <title>이하영 포트폴리오</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Resume Website Template Free Download" name="keywords">
         <meta content="Resume Website Template Free Download" name="description">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
@@ -22,6 +23,65 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .header p {
+                color: #FF6F61;
+                font-size: 22px;
+                font-weight: 600;
+                margin: 20px 0 14px 0;
+            }
+            .panel-heading a.collapsed {
+                color: rgb(51, 51, 51);
+                background: rgb(242, 243, 247);
+                border-width: 1px !important;
+                border-style: solid !important;
+                border-color: rgb(230, 230, 230) !important;
+                border-image: initial !important;
+            }
+            .panel-heading a {
+                display: block;
+                width: 100%;
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-family: Quicksand, Arial, sans-serif;
+                background-color: rgb(44, 152, 240);
+                color: rgb(255, 255, 255);
+                position: relative;
+                box-shadow: none !important;
+                padding: 20px 25px;
+            }
+            .panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+                color: inherit;
+            }
+            .panel-body {
+                margin-top: 5px;
+                padding: 1.5em;
+                border-width: 1px !important;
+                border-style: solid !important;
+                border-color: rgb(230, 230, 230) !important;
+                border-image: initial !important;
+            }
+            .panel-heading a.collapsed::after {
+                content: "\F4FE";
+            }
+            .panel-heading a::after {
+                font-family: icomoon;
+                content: "\F4FE";
+                position: absolute;
+                right: 20px;
+                font-size: 14px;
+                font-weight: 400;
+                top: 50%;
+                line-height: 1;
+                margin-top: -7px;
+            }
+            ::before, ::after {
+                box-sizing: border-box;
+            }
+        </style>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -70,10 +130,10 @@
                 <!-- Header Start -->
                 <div class="header" id="header">
                     <div class="content-inner">
-                        <p>I'm</p>
-                        <h1>Michael Miller</h1>
                         <h2></h2>
-                        <div class="typed-text">Web Designer, Web Developer, Front End Developer, Apps Developer, Graphic Designer</div>
+                        <div class="typed-text">Back End Developer, Web Developer</div>
+                        <p>안녕하세요!<br>신입 백엔드 개발자</p>
+                        <h1>이 하 영 입니다.</h1>
                     </div>
                 </div>
                 <!-- Header End -->
@@ -81,8 +141,8 @@
                 <!-- Large Button Start -->
                 <div class="large-btn">
                     <div class="content-inner">
-                        <a class="btn" href="#"><i class="fa fa-download"></i>Resume</a>
-                        <a class="btn" href="#"><i class="fa fa-hands-helping"></i>Hire Me</a>
+                        <a class="btn" href="https://www.notion.so/ha02e/dd319f9e41f1453a82afc585d2c02f76" target="_blank"><i class="fa fa-download"></i>이력서</a>
+                        <a class="btn" href="https://github.com/ha02e" target="_blank"><i class="fa fa-hands-helping"></i>깃허브</a>
                     </div>
                 </div>
                 <!-- Large Button End -->
@@ -148,33 +208,75 @@
                         <div class="content-header">
                             <h2>Education</h2>
                         </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span>01-Jan-2020 <i>to</i> 31-Dec-2050</span>
-                                    <h3>Master Degree</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span>01-Jan-2020 <i>to</i> 31-Dec-2050</span>
-                                    <h3>Bachelor Degree</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span>01-Jan-2020 <i>to</i> 31-Dec-2050</span>
-                                    <h3>Associate Degree</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span>01-Jan-2020 <i>to</i> 31-Dec-2050</span>
-                                    <h3>High School</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="fancy-collapse-panel">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h3 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        [신촌 이젠아카데미] <strong>클라우드(AWS)기반 자바(JAVA) 백엔드 웹개발자 [Spring]_A</strong>
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <p>[신촌 이젠아카데미] <strong>클라우드(AWS)기반 자바(JAVA) 백엔드 웹개발자 [Spring]_A</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                        <ul>
+                                                            <li>Separated they live in Bookmarksgrove right</li>
+                                                            <li>Separated they live in Bookmarksgrove right</li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        [종로 그린컴퓨터아트학원] <strong>적응형 웹디자인 제작 전문가</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <p>[신촌 이젠아카데미] <strong>클라우드(AWS)기반 자바(JAVA) 백엔드 웹개발자 [Spring]_A</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                        <ul>
+                                                            <li>HTML,CSS,JavaScript 지식 습득</li>
+                                                            <li>Separated they live in Bookmarksgrove right</li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        [신구대학교] <strong>미디어콘텐츠과 전공(졸업)</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                        <ul>
+                                                            <li>재학 기간 : 2015.03 ~ 2018.02</li>
+                                                            <li>학점 평균 : 3.978 / 4.5</li>
+                                                            <li>2016 동계 글로벌챌린지 프로그램 선발 - <strong>일본 서점 탐방</strong></li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed">
+                                                        [장기고등학교] <strong>인문계(졸업)</strong>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
