@@ -31,6 +31,50 @@
                 font-weight: 600;
                 margin: 20px 0 14px 0;
             }
+            .content-header::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 80px;
+                height: 4px;
+                bottom: 0;
+                left: 0;
+                background: #FF6F61;
+            }
+
+            .experience .exp-col {
+                position: relative;
+                width: 100%;
+                padding: 20px 0 20px 20px;
+                border-left: 1px solid #FF6F61;
+                border-bottom: none;
+            }
+            .experience .col-md-8{
+                padding-right: 15px;
+                padding-left: 0; 
+            }
+            .experience .exp-col span{
+                color: #FF6F61;
+            }
+            .experience .exp-col h3 {
+                font-size: 26px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                margin: 14px 0;
+                color: #333333;
+            }
+            .experience .exp-col h4 {
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                margin: 14px 0;
+            }
+            .experience .work-list li{
+                margin: 6px 0;
+                list-style: circle;
+                color: #333333;
+            }
+
             .panel-heading a.collapsed {
                 color: rgb(51, 51, 51);
                 background: rgb(242, 243, 247);
@@ -154,14 +198,11 @@
                             <h2>About Me</h2>
                         </div>
                         <div class="row align-items-center">
-                            <div class="col-md-6 col-lg-5">
-                                <img src="img/about.jpg" alt="Image">
-                            </div>
-                            <div class="col-md-6 col-lg-7">
+                            <div class="col-md-12">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci. Donec molestie velit id libero blandit, quis suscipit urna suscipit. Donec aliquet erat eu lacinia iaculis. Ut tempor tellus eu sem pharetra feugiat. Proin libero ligula, gravida at porttitor eget.
                                 </p>
-                                <a class="btn" href="#">Hire Me</a>
+                                <p>저는 웹디자이너로 일을 한 경험이 있고, 디자인을 한 페이지들을 구현까지 직접 해보고 싶어 프로그래밍에 입문하게 되었습니다.~~</p>
                             </div>
                         </div>
                         <div class="row">
@@ -209,23 +250,23 @@
                 <div class="experience" id="experience">
                     <div class="content-inner">
                         <div class="content-header">
-                            <h2>Experience</h2>
+                            <h2>Work Experience</h2>
                         </div>
                         <div class="row align-items-center">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="exp-col">
-                                    <span><i>01-Jan-2020 ~ 31-Dec-2050</i></span>
-                                    <h3>Codex Solution</h3>
-                                    <h4>San Francisco, CA</h4>
-                                    <h5>Project Manager</h5>
+                                    <span>2019.05 ~ 2022.07(3년 3개월)</span>
+                                    <h3>삼성씨앤에이치(주)</h3>
+                                    <h4>온라인팀 / 웹디자이너 / 사원</h4>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <ul>
-                                    <li>d</li>
-                                    <li>d</li>
-                                    <li>d</li>
-                                    <li>d</li>
+                            <div class="col-md-7">
+                                <ul class="work-list">
+                                    <li>자사 홈페이지 관리</li>
+                                    <li>각종 쇼핑몰 제품 등록 및 상세페이지 관리</li>
+                                    <li>네이버 블로그, 인스타그램 제작 및 운영 경험</li>
+                                    <li>이벤트 배너 이미지 제작</li>
+                                    <li>라이브쇼핑 배너 이미지, 판넬 제작</li>
                                 </ul>
                             </div>
                         </div>
