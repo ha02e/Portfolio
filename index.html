@@ -25,6 +25,12 @@
         <link href="css/style.css" rel="stylesheet">
 
         <style>
+            .navbar-expand-md .navbar-nav .nav-link i {
+                color: #FF6F61;
+                float: right;
+                padding-top: 0px;
+                transition: all .3s;
+            }
             .header p {
                 color: #FF6F61;
                 font-size: 22px;
@@ -42,18 +48,20 @@
                 background: #FF6F61;
             }
 
+            /*About Me 부분*/
             .about .contact-info p {
                 font-size: 16px;
                 font-weight: 600;
                 letter-spacing: 1px;
                 margin-bottom: 10px;
+                color: #333;
             }
             .about .contact-info p i {
                 width: 25px;
-                color: #FF6F61;
+                color: #000;
             }
 
-            /** skills 부분 */
+            /* skills 부분 */
             .skill {
                 position: relative;
                 padding: 60px 30px;
@@ -280,31 +288,26 @@
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#header">Home<i class="fa fa-home"></i></a>
+                                    <a class="nav-link" href="#header">Home<i class="bi bi-house-heart-fill"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#about">About Me<i class="fa fa-address-card"></i></a>
+                                    <a class="nav-link" href="#about">About Me<i class="bi bi-person-vcard-fill"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#education">Education<i class="fa fa-address-card"></i></a>
+                                    <a class="nav-link" href="#education">Education<i class="bi bi-mortarboard-fill"></i></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#skill">Skills<i class="fa fa-address-card"></i></a>
+                                    <a class="nav-link" href="#skill">Skills<i class="bi bi-bar-chart-line-fill"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Project<i class="fa fa-star"></i></a>
+                                    <a class="nav-link" href="#portfolio">Project<i class="bi bi-person-workspace"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#experience">Work Experience<i class="fa fa-file-archive"></i></a>
+                                    <a class="nav-link" href="#experience">Work Experience<i class="bi bi-activity"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
-                </div>
-                <div class="sidebar-footer">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="content">
@@ -337,16 +340,21 @@
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="contact-info">
-                                    <p><i class="fa fa-user"></i>이 하 영 (1996.06.11)</p>
+                                    <p><i class="fa fa-user"></i>이 하 영 (1996.06.11 / 만 26세)</p>
                                     <p><i class="fa fa-map-marker"></i>경기도 김포시</p>
-                                    <p><i class="fa fa-map-marker"></i><a href="https://ha02e.notion.site/Study-4727d4391dbf40a3902f4ffcfdf87ac8" target="_blank">https://ha02e.notion.site/Study</a></p>
+                                    <p>
+                                        <?xml version="1.0" ?><svg data-name="Social Media Icons" id="Social_Media_Icons" viewBox="0 0 512 512" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Notion"><path d="M126,511.94,474.65,490.7a28,28,0,0,0,26.24-27.9V99.49a10.72,10.72,0,0,0-4.54-8.76L382.64,10.55A57.77,57.77,0,0,0,345.37.14L39.16,21.41a30.14,30.14,0,0,0-28,30.07V380a15.58,15.58,0,0,0,3.16,9.4l82.92,109.3A33.64,33.64,0,0,0,126,511.94Z"/><path class="cls-1" d="M111.54,152.73v300A19.48,19.48,0,0,0,132,472.17l318.09-15.9a19.18,19.18,0,0,0,18.22-19.16V131.39a14.9,14.9,0,0,0-15.71-14.88L129.21,134.08A18.68,18.68,0,0,0,111.54,152.73Z"/><path class="cls-1" d="M428.63,83.52l-307,17.34A31.89,31.89,0,0,1,100,94L55.65,58.88a4.83,4.83,0,0,1,2.63-8.6l283.36-22A51.32,51.32,0,0,1,375.82,38l54.52,39.7A3.22,3.22,0,0,1,428.63,83.52Z"/><path d="M417.05,168.18l-.34,8.32a9.53,9.53,0,0,1-8.09,9l-15.46,2.33V403.79a5.42,5.42,0,0,1-3.45,5l-17.2,6.77a36.56,36.56,0,0,1-44-14.08l-100.78-155v146l.59-.14,29.7,7.86a2,2,0,0,1,1.26,2.72h0a25.8,25.8,0,0,1-21.67,14.72l-9.88.63-37.76,2.42-24.81,1.59a2.2,2.2,0,0,1-2.25-2.8l2.15-7.44a8.29,8.29,0,0,1,6-5.77l18.9-4.6V204.44l-26.52-1.65,3-10.86a15.08,15.08,0,0,1,13.73-11.06l9.8-.52,37.76-2L252,177.09a7.2,7.2,0,0,1,6.38,3.21L278,209.92l79.49,120V192.16l-24.26-1.29a1.79,1.79,0,0,1-1.7-1.67,16.57,16.57,0,0,1,1.13-7.36c3-7.33,11.47-12.08,21.52-12.21l3.31-.19,35.69-1.92,22-1.2A1.79,1.79,0,0,1,417.05,168.18Z"/></g></svg>
+                                        <a href="https://ha02e.notion.site/Study-4727d4391dbf40a3902f4ffcfdf87ac8" target="_blank">https://ha02e.notion.site/Study</a></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="contact-info">
                                     <p><i class="fa fa-envelope"></i><a href="mailto:ha02e@naver.com">ha02e@naver.com</a></p>
                                     <p><i class="fa fa-phone"></i><a href="tel:+1234567890">010-7180-9870</a></p>
-                                    <p><i class="fa fa-map-marker"></i><a href="https://velog.io/@ha02e" target="_blank">https://velog.io/@ha02e</a></p>  
+                                    <p>
+                                        <svg viewBox="0 0 50 50" width="18" height="18" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M45 1H5C2.8 1 1 2.8 1 5v40c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4V5c0-2.2-1.8-4-4-4z" fill="#000000" class="fill-20b9eb"></path><path d="M10.9 20s3-3 4 0c1 4 3.2 11.5 5 15 1 2 3 3 5 3s3.9-1.1 5-2c2.8-2.3 8.3-7.6 10-17 1.7-9.4-11.6-8.2-13 0 3.4-2.1 5 1 4 4s-3 6-4 6c-.8 0-2-2.2-3-6-.9-3.6-2-11-5-11s-4 1-4 1c-2.8 2.3-5 6-5 6l1 1z" fill="#ffffff" class="fill-ffffff"></path></svg>
+                                        <a href="https://velog.io/@ha02e" target="_blank">https://velog.io/@ha02e</a>
+                                    </p>  
                                 </div>
                             </div>
                         </div>
