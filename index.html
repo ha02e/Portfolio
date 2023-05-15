@@ -63,6 +63,59 @@
                 color: #000;
             }
 
+            /*Education 부분*/
+            .education .exp-col {
+                position: relative;
+                width: 100%;
+                padding: 20px 0 20px 20px;
+                border-left: 1px solid #FF6F61;
+                border-bottom: none;
+            }
+            .education .col-md-8{
+                padding-right: 15px;
+                padding-left: 0; 
+            }
+            .education .exp-col span::before {
+                position: absolute;
+                content: "";
+                width: 11px;
+                height: 11px;
+                background: #FF6F61;
+                top: 5px;
+                left: -26px;
+                border-radius: 5px;
+            }
+            .education .exp-col span{
+                color: #FF6F61;position: relative;
+                display: block;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+            .education .exp-col h3 {
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 0px;
+                line-height: 32px;
+                margin: 14px 0;
+                color: #333333;
+            }
+            .education .exp-col h4 {
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                margin: 14px 0;
+            }
+            .education .edu-list li{
+                margin: 6px 0;
+                list-style: circle;
+                color: #333333;
+            }
+            .education hr{
+                margin: 8px 0;
+                background-color: #FF6F61;
+            }
+
             /* skills 부분 */
             .skill {
                 position: relative;
@@ -381,90 +434,67 @@
                         <div class="content-header">
                             <h2>Education</h2>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="fancy-collapse-panel">
-                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingOne">
-                                                <h3 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        [신촌 이젠아카데미] <strong>클라우드(AWS)기반 자바(JAVA) 백엔드 웹개발자 [Spring]_A</strong>
-                                                    </a>
-                                                </h3>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        <strong>교육 기간</strong> : 2022.11 ~ 2023.04 (총 900시간)<br>
-                                                        <strong>교육 내용</strong> :
-                                                    </p>
-                                                        <ul>
-                                                            <li>JAVA, 객체지향 프로그래밍</li>
-                                                            <li>웹 표준 기반 HTML, CSS, JavaScript</li>
-                                                            <li>데이터베이스(SQL/ORACLE 활용)</li>
-                                                            <li>자바 웹 프로그래밍(JSP/Spring/SpringBoot)</li>
-                                                            <li>조별 프로젝트를 통한 협업(기획,구현)</li>
-                                                        </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingTwo">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        [종로 그린컴퓨터아트학원] <strong>적응형 웹디자인 제작 전문가</strong>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        <strong>교육 기간</strong> : 2018.11 ~ 2019.04<br>
-                                                        <strong>교육 내용</strong> :
-                                                    </p>
-                                                        <ul>
-                                                            <li>화면 설계(프로토타입, 스토리보드 등)</li>
-                                                            <li>HTML, CSS, jquery, JavaScript</li>
-                                                            <li>반응형 웹 프로젝트 기획, 제작</li>
-                                                            <li>2D그래픽(포토샵, 일러스트)</li>
-                                                        </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingThree">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        [신구대학교] <strong>미디어콘텐츠과 전공(졸업)</strong>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        <strong>재학 기간</strong> : 2015.03 ~ 2018.02<br>
-                                                        <strong>학점 평균</strong> : 3.978 / 4.5
-                                                    </p>
-                                                        <ul>
-                                                            <li>콘텐츠 기획, 디지털콘텐츠 제작, 웹진/이북 제작, 편집디자인, 영상편집 등</li>
-                                                            <li>2017 서울국제도서전 참가 (COEX) - 제작한 단행본, 잡지 전시</li>
-                                                            <li>2016 동계 글로벌챌린지 프로그램 선발 및 참여(일본 서점 탐방)</li>
-                                                        </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingFour">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed">
-                                                        [장기고등학교] <strong>인문계(졸업)</strong>
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-5">
+                                <div class="exp-col">
+                                    <span>2022.11 ~ 2023.04 (총 900시간)</span>
+                                    <h3>클라우드(AWS) 기반<br>자바(JAVA) 백엔드<br>웹개발자 [Spring]_A</h3>
+                                    <h4>신촌 이젠아카데미</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <ul class="edu-list">
+                                    <li>JAVA, 객체지향 프로그래밍</li>
+                                    <li>웹 표준 기반 HTML, CSS, JavaScript</li>
+                                    <li>데이터베이스(SQL/ORACLE 활용)</li>
+                                    <li>자바 웹 프로그래밍(JSP/Spring/SpringBoot)</li>
+                                    <li>조별 프로젝트를 통한 협업(기획,구현)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="col-md-5">
+                                <div class="exp-col">
+                                    <span>2018.11 ~ 2019.04</span>
+                                    <h3>적응형 웹디자인<br>제작 전문가</h3>
+                                    <h4>종로 그린컴퓨터아트학원</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <ul class="edu-list">
+                                    <li>화면 설계(프로토타입, 스토리보드 등)</li>
+                                    <li>UX 설계, UI 구현</li>
+                                    <li>HTML, CSS, jquery, JavaScript</li>
+                                    <li>반응형 웹 프로젝트 기획, 제작</li>
+                                    <li>2D그래픽(포토샵, 일러스트)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="col-md-5">
+                                <div class="exp-col">
+                                    <span>2015.03 ~ 2018.02</span>
+                                    <h3>신구대학교<br>미디어콘텐츠과 졸업</h3>
+                                    <h4>학점 평균 : 3.978 / 4.5</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <ul class="edu-list">
+                                    <li>콘텐츠 기획, 디지털콘텐츠 제작, 웹진/이북 제작,<br>편집디자인, 영상편집 등</li>
+                                    <li>2017 서울국제도서전 참가 (COEX)<br>- 제작한 단행본, 잡지 전시</li>
+                                    <li>2016 동계 글로벌챌린지 프로그램 선발 및 참여<br>(일본 서점 탐방)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="exp-col">
+                                    <span>2012.03 ~ 2015.02</span>
+                                    <h3>장기고등학교 졸업</h3>
+                                    <h4>인문계</h4>
                                 </div>
                             </div>
                         </div>
