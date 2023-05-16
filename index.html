@@ -27,14 +27,35 @@
         <link href="css/style.css" rel="stylesheet">
 
         <style>
+            body {
+                background: #eff0fb;
+                color: #444444;
+            }
+            .wrapper .content::before, .wrapper .content::after, .wrapper .content{
+                background: #eff0fb;
+            }
+            
+            .large-btn .content-inner, .about, .education, .skill, .portfolio, .experience{
+                border-bottom: 30px solid #eff0fb;
+            }
+
             .navbar-expand-md .navbar-nav .nav-link i {
                 color: #FF6F61;
                 float: right;
                 padding-top: 0px;
                 transition: all .3s;
             }
+            .navbar-expand-md .navbar-nav .nav-link:hover, .navbar-expand-md .navbar-nav .nav-link.active {
+                color: #E76B5C;
+            }
+             .navbar-expand-md .navbar-nav .nav-link i {
+                color: #E76B5C;
+                float: right;
+                padding-top: 0px;
+                transition: all .3s;
+            }
             .header p {
-                color: #FF6F61;
+                color: #E76B5C;
                 font-size: 22px;
                 font-weight: 600;
                 margin: 20px 0 14px 0;
@@ -43,11 +64,20 @@
                 content: '';
                 position: absolute;
                 display: block;
-                width: 80px;
+                width: 100px;
                 height: 4px;
                 bottom: 0;
                 left: 0;
-                background: #FF6F61;
+                background: #7831FF;
+            }
+
+            .large-btn .btn {
+                color: #ffffff;
+                background: #262B5E;
+            }
+            .large-btn .btn:last-child {
+                color: #ffffff;
+                background: #7831FF;
             }
 
             /*About Me 부분*/
@@ -62,13 +92,21 @@
                 width: 25px;
                 color: #000;
             }
+            .about hr{
+                background-color: #7831FF;
+                margin: 20px 0 24px 0;
+            }
+            .introduce{
+                font-size: 14.6px;
+                line-height: 26px;
+            }
 
             /*Education 부분*/
             .education .exp-col {
                 position: relative;
                 width: 100%;
                 padding: 20px 0 20px 20px;
-                border-left: 1px solid #FF6F61;
+                border-left: 1px solid #7831FF;
                 border-bottom: none;
             }
             .education .col-md-8{
@@ -80,15 +118,16 @@
                 content: "";
                 width: 11px;
                 height: 11px;
-                background: #FF6F61;
+                background: #7831FF;
                 top: 5px;
                 left: -26px;
                 border-radius: 5px;
             }
             .education .exp-col span{
-                color: #FF6F61;position: relative;
+                color: #E76B5C;
+                position: relative;
                 display: block;
-                font-size: 13px;
+                font-size: 14.6px;
                 letter-spacing: 1px;
                 margin-bottom: 10px;
             }
@@ -101,7 +140,7 @@
                 color: #333333;
             }
             .education .exp-col h4 {
-                font-size: 14px;
+                font-size: 14.6px;
                 font-weight: 400;
                 font-style: normal;
                 margin: 14px 0;
@@ -110,10 +149,11 @@
                 margin: 6px 0;
                 list-style: circle;
                 color: #333333;
+                font-size: 14.6px;
             }
             .education hr{
                 margin: 8px 0;
-                background-color: #FF6F61;
+                background-color: #7831FF;
             }
 
             /* skills 부분 */
@@ -121,7 +161,6 @@
                 position: relative;
                 padding: 60px 30px 0px 30px;
                 background: #ffffff;
-                border-bottom: 30px solid #F6D155;
             }
             .skill-name{
                 display: flex;
@@ -298,10 +337,18 @@
                 margin: 6px 0;
                 list-style: circle;
                 color: #333333;
+                font-size: 14.6px;
             }
             
             ::before, ::after {
                 box-sizing: border-box;
+            }
+
+            .footer {
+                position: relative;
+                width: 100%;
+                padding: 30px 30px 0 30px;
+                background: #eff0fb;
             }
         </style>
     </head>
@@ -394,7 +441,7 @@
                         <hr>
                         <div class="row align-items-center">
                             <div class="col-md-12">
-                                <p>
+                                <p class="introduce">
                                     안녕하세요. 백엔드 개발자 이하영입니다.<br>
                                     저는 웹디자이너로 일을 한 경험이 있고, 디자인을 한 페이지들을 구현까지 직접 해보고 싶어 프로그래밍에 입문하게 되었습니다.~~</p>
                             </div>
@@ -458,7 +505,7 @@
                             <div class="col-md-7">
                                 <ul class="edu-list">
                                     <li>콘텐츠 기획, 디지털콘텐츠 제작, 웹진/이북 제작,<br>편집디자인, 영상편집 등</li>
-                                    <li>2017 서울국제도서전 참가 (COEX)<br>- 제작한 단행본, 잡지 전시</li>
+                                    <li>2017 서울국제도서전 참가 (COEX)<br>- 졸업작품(단행본, 잡지) 전시</li>
                                     <li>2016 동계 글로벌챌린지 프로그램 선발 및 참여<br>(일본 서점 탐방)</li>
                                 </ul>
                             </div>
