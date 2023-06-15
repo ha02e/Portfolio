@@ -68,7 +68,7 @@
                 height: 4px;
                 bottom: 0;
                 left: 0;
-                background: #E76B5C;
+                background: #7831FF;
             }
 
             .large-btn .btn {
@@ -229,15 +229,16 @@
                 font-size: 13px;
                 line-height: 15px;
                 text-transform: uppercase;
-                border: 1px solid #FF6F61;
+                border: 1px solid #7831FF;
                 background: #ffffff;
                 transition: all 0.3s ease-in-out;
             }
 
             .portfolio #portfolio-flters li:hover,
             .portfolio #portfolio-flters li.filter-active {
-                background: #FF6F61;
-                color: #222222;
+                background: #D4ADFC;
+                color: #fff;
+                font-weight: bold;
             }
 
             .portfolio .portfolio-item figure {
@@ -317,7 +318,7 @@
                 position: relative;
                 width: 100%;
                 padding: 20px 0 20px 20px;
-                border-left: 1px solid #FF6F61;
+                border-left: 1px solid #7831FF;
                 border-bottom: none;
             }
             .experience .col-md-8{
@@ -326,6 +327,16 @@
             }
             .experience .exp-col span{
                 color: #FF6F61;
+            }
+            .experience .exp-col span::before {
+                position: absolute;
+                content: "";
+                width: 11px;
+                height: 11px;
+                background: #7831FF;
+                top: 5px;
+                left: -26px;
+                border-radius: 5px;
             }
             .experience .exp-col h3 {
                 font-size: 26px;
